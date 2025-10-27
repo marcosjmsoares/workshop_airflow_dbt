@@ -25,6 +25,8 @@ DBT_PASSWORD=dbtpassword
 
 PRA FUNCIONAR O GIT MODULES TEM QUE CRIAR UM REPOSITORIO ISOLADO. CASO NAO, COPIAR E COLAR PASTA PARA A PASTA 3_AIRFLOW/DBT
 2:32 adicionado git submodulo = git submodule add https://github.com/marcosjmsoares/workshop_airflow_dbt/tree/main/2_data_warehouse
+COMANDO PARA FAZER O MERGE git submodule update --remote --merge
+
 
 2:33 git pull --recurse pra subir tb o que e submodulo
 git config submodule.recurse true
