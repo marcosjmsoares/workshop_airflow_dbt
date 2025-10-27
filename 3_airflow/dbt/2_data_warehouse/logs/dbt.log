@@ -1,0 +1,79 @@
+[0m18:42:50.394381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A2DD7920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A5ABA540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A5AD3230>]}
+
+
+============================== 18:42:50.424572 | 12c52da4-4171-4859-abd5-7d000a46f30a ==============================
+[0m18:42:50.424572 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:42:50.425596 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcosjm\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:43:30.592903 [error] [MainThread]: Encountered an error:
+
+[0m18:43:30.600992 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\dbt\task\init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\dbt\task\init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\click\termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\click\termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:43:30.608447 [debug] [MainThread]: Command `dbt init` failed at 18:43:30.607384 after 40.30 seconds
+[0m18:43:30.609402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A629B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A6022C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A6612EA0>]}
+[0m18:43:30.610364 [debug] [MainThread]: Flushing usage events
+[0m18:43:32.124364 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:47:45.918971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA5D82A9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA5CF6E5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA5C663BC0>]}
+
+
+============================== 18:47:45.922974 | b1b718fb-b176-486f-b276-611ae11fbee7 ==============================
+[0m18:47:45.922974 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:47:45.922974 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\marcosjm\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m18:47:51.752093 [debug] [MainThread]: Starter project path: C:\Estudos\Python\workshop_airflow_dbt\1_local_setup\.venv\Lib\site-packages\dbt\include\starter_project
+[0m18:47:51.787773 [info ] [MainThread]: 
+Your new dbt project "jornada_dw" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:47:51.789772 [info ] [MainThread]: Setting up your profile.
+[0m18:53:48.655644 [info ] [MainThread]: Profile jornada_dw written to C:\Users\marcosjm\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:53:48.657634 [debug] [MainThread]: Command `dbt init` succeeded at 18:53:48.657634 after 362.83 seconds
+[0m18:53:48.657634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA5D0E2EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA5B27A7E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA5B278380>]}
+[0m18:53:48.658644 [debug] [MainThread]: Flushing usage events
+[0m18:53:49.579148 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:22:25.739557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9BCC46D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9BC5BEFC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9BC6462D0>]}
+
+
+============================== 22:22:25.744556 | e96dd8bb-7f6b-41e7-baef-179dd7009e29 ==============================
+[0m22:22:25.744556 [info ] [MainThread]: Running with dbt=1.9.6
+[0m22:22:25.746554 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marcosjm\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:22:25.747555 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Estudos\Python\workshop_airflow_dbt\2_data_warehouse\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:22:25.750553 [debug] [MainThread]: Command `dbt deps` failed at 22:22:25.750553 after 0.16 seconds
+[0m22:22:25.750553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9BD107B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9BAA67950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9BAA67B90>]}
+[0m22:22:25.751553 [debug] [MainThread]: Flushing usage events
+[0m22:22:26.527792 [debug] [MainThread]: An error was encountered while trying to flush usage events
