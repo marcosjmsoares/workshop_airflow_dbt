@@ -1,3 +1,4 @@
+AULA 01
 comando para chamar o dbt de outra pasta no poetry, porem cria os arquivos na pasta que esta instalado o dbt (pasta 1) = poetry -C ../1_local_setup/ run dbt init
 
 criando pasta 1 em 38min
@@ -29,6 +30,10 @@ PRA FUNCIONAR O GIT MODULES TEM QUE CRIAR UM REPOSITORIO ISOLADO. CASO NAO, COPI
 git config submodule.recurse true
 git config pull.recurseSubmodules on-demand
 
-2:44 configurado banco prod no railway.
+2:43 configurado banco prod no railway.
 
 2:48 configurando banco prod no airflow
+
+------------------------------------------------------------------------------------------
+
+AULA 02
