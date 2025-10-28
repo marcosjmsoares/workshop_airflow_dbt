@@ -39,3 +39,5 @@ git config pull.recurseSubmodules on-demand
 ------------------------------------------------------------------------------------------
 
 AULA 02
+
+minutos 29 astro dbt deploy
