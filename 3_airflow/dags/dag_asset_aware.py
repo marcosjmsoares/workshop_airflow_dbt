@@ -7,8 +7,8 @@ dbt_env = Variable.get("dbt_env", default_var="dev").lower()
 if dbt_env not in ("dev", "prod"):
     raise ValueError(f"dbt_env inválido: {dbt_env!r}, use 'dev' ou 'prod'")
 
-asset_name_dev = 'postgres://host.docker.internal:5433/postgres/public/stg_cadastros_2'
-asset_name_prod = 'postgres://yamanote.proxy.rlwy.net:32322/railway/public/stg_cadastros_2'
+asset_name_dev = 'postgres://tramway.proxy.rlwy.net:53987/railway/public/mart_metricas_clientes' 
+asset_name_prod = 'postgres://tramway.proxy.rlwy.net:53987/railway/public/mart_metricas_clientes'
 
 asset_name = asset_name_dev if dbt_env == "dev" else asset_name_prod
 
